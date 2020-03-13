@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Chakra+Petch|IBM+Plex+Sans:100|Playfair+Display&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&family=IBM+Plex+Mono:ital@0;1&family=IBM+Plex+Sans+Condensed:ital@0;1&family=IBM+Plex+Sans:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&family=IBM+Plex+Serif:ital@0;1&family=Playfair+Display&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body { 
+  margin: 0;
+  font-family: 'IBM Plex Sans', sans-serif;
+
+}
+
+#header {
+  background-color: #f1f1f1;
+  padding: 0px 5px;
+  color: black;
+  text-align: center;
+  font-size: 90px; 
+  font-weight: bold;
+  line-height: 0px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: 0.2s;
+
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+	<p>my archive</p>
+	<p style="font-size:20px"><a href="#October" style="color:black; text-decoration:none">October</a> | <a href="#November" style="color:black; text-decoration:none">November</a> | <a href="#December" style="color:black; text-decoration:none">December</a></p>
+</div>
+
+<div id="October" style="margin-top:200px;padding:15px 15px;font-size:30px">
+  <p style="font-size:50px"><b>October 2019: </b></p>
+  <p><i>This is an archive of all my work from September 2019.  Project titles are links, and projects appear below in chronological order.</i></p>
+  <p><a href="https://observablehq.com/@c23ly/hello-world"  style="color:black; font-weight:bold">Hello World</a></p> 
+  <p>This is the first computer science project I ever completed.  Though quite simple (and not entirely functional), it was my introduction into coding.</p>
+  <p><a href="https://observablehq.com/@c23ly/mad-lib"  style="color:black; font-weight:bold">Mad Lib</a></p> 
+  <p>This is the second 'codesketch' I ever did.  It is essentially a simple, online mad-lib.  </p>
+  <p><a href="https://observablehq.com/@c23ly/loading-bar"  style="color:black; font-weight:bold">Loading Bar</a></p> 
+  <p>This is a bit of a strange one.  Fed up with slow loading times, I decided to create a loading bar that you can operate yourself!</p>
+</div>
+
+<div id="November" style="padding:15px 15px;font-size:30px">
+<p style="font-size:50px"><b>November 2019: </b></p>
+  <p><i>This is an archive of all my work from November 2019.  Project titles are links, and projects appear below in chronological order.</i></p>
+  <p><a href="https://observablehq.com/d/f4e73bab22633efb"  style="color:black; font-weight:bold">Scary Image Project</a></p> 
+  <p>For Halloween, I took a cute image of a hedgehog and turned it into a...<i>vampire</i> hedgehog!</p>
+  <p><a href="https://observablehq.com/d/bb97d29ce19ad5a4"  style="color:black; font-weight:bold">Rock, Paper, Scisors, Pencil!</a></p> 
+  <p>Play Rock, Paper, Scissors online!  What's a pencil doing there?</p>
+</div>
+
+<div id="December" style="padding:15px 15px;font-size:30px">
+<p style="font-size:50px"><b>December 2019: </b></p>
+  <p><i>This is an archive of all my work from December 2019.  Project titles are links, and projects appear below in chronological order.</i></p>
+  <p><a href="https://observablehq.com/@c23ly/arrays-workout"  style="color:black; font-weight:bold">Arrays Workout</a></p> 
+  <p>This was a practice 'exercise' I did surrounding arrays: what they are and what they do.</p>
+</div>
+
+<script>
+// When the user scrolls down 50px from the top of the document, resize the header's font size
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("header").style.fontSize = "30px";
+  } else {
+    document.getElementById("header").style.fontSize = "90px";
+  }
+}
+</script>
+
+</body>
+</html>
