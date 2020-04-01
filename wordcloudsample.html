@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {box-sizing: border-box;}
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&family=IBM+Plex+Mono:ital@0;1&family=IBM+Plex+Sans+Condensed:ital@0;1&family=IBM+Plex+Sans:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&family=IBM+Plex+Serif:ital@0;1&family=Playfair+Display&display=swap" rel="stylesheet">
 
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+  body{
+    font-family: 'IBM Plex Sans', sans-serif;
+  }
+* {
+  box-sizing: border-box;
 }
 
+/* Add a black background color to the top navigation bar */
 .topnav {
   overflow: hidden;
   background-color: #e9e9e9;
 }
 
+/* Style the links inside the navigation bar */
 .topnav a {
   float: left;
   display: block;
@@ -25,57 +30,65 @@ body {
   font-size: 17px;
 }
 
+/* Change the color of links on hover */
 .topnav a:hover {
   background-color: #ddd;
   color: black;
 }
 
+/* Style the "active" element to highlight the current page */
 .topnav a.active {
   background-color: #2196F3;
   color: white;
 }
 
-.topnav .search-container {
-  float: right;
-}
-
+/* Style the search box inside the navigation bar */
 .topnav input[type=text] {
-  padding: 6px;
-  margin-top: 8px;
-  font-size: 17px;
-  border: none;
-}
-
-.topnav .search-container button {
   float: right;
   padding: 6px;
+  border: none;
   margin-top: 8px;
   margin-right: 16px;
-  background: #ddd;
   font-size: 17px;
-  border: none;
-  cursor: pointer;
 }
 
-.topnav .search-container button:hover {
-  background: #ccc;
 }
 
-@media screen and (max-width: 600px) {
-  .topnav .search-container {
-    float: none;
-  }
-  .topnav a, .topnav input[type=text], .topnav .search-container button {
-    float: none;
-    display: block;
-    text-align: left;
-    width: 100%;
-    margin: 0;
-    padding: 14px;
-  }
-  .topnav input[type=text] {
-    border: 1px solid #ccc;  
-  }
+#myInput {
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+  font-family: 'IBM Plex Sans';
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+font-family: 'IBM Plex Sans';
+
+}
+
+#myUL li {
+  border: 1px solid #ddd;
+  margin-top: -1px;
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block;
+  font-family: 'IBM Plex Sans';
+
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+
 }
 </style>
 </head>
@@ -85,19 +98,80 @@ body {
   <a class="active" href="#home">Home</a>
   <a href="#about">About</a>
   <a href="#contact">Contact</a>
-  <div class="search-container">
-    <form action="/action_page.php">
-      <input type="text" placeholder="Search.." name="search">
-      <button type="submit">Submit</button>
-    </form>
-  </div>
+  <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search journal entries for keywords (e.g. 'arrays' or 'homepage')" title="Type in a name">
 </div>
 
-<div style="padding-left:16px">
-  <h2>Responsive Search Bar</h2>
-  <p>Navigation bar with a search box and a submit button inside of it.</p>
-  <p>Resize the browser window to see the responsive effect.</p>
-</div>
+<ul id="myUL">
+  <div style="font-size:24px"><b>March 2020</b></div>
+  <div><li><b>March 10, 2020:</b> This is my journal!  For my first entry, I chose to write about the first 'codesketch' I ever did in this class.  It's a red rectangle that says: "Hi, how are you?"  As simple (and fun!) as it is, I think it actually presents one possible answer to the question at the top of my main website page (if you haven't visited it already, here it is).  That is, a website is supposed to be interactive: a conversation between the person who visits it, and the person who made it.  In a world increasingly defined by the rise of technology and by the absence of personal, human interaction, maybe more human web design is a way to reclaim some connection.</li></div>
+  <div class="filterDiv fruit"><li><b>March 11, 2020:</b> This is the second entry in my journal! I've made some (significant) improvements to this page, but there are still many, many changes I have to make.  So far, I've made it such that, when the mouse hovers over a particular "journal entry," it will increase the "opacity" of that section of the page, making it easier to read.  I've also made it so that the image in the back of the journal will stay fixed with respect to the window in which someone is viewing the page – the "viewport," perhaps, is the word for it?  Both of these changes (believe me, there are more), though they seem simple, took quite some time to implement and refine – and challenges still exist.  For instance, at the time of this writing, the journal entries are slightly off center, meaning I still have to refine the width and positioning of each "div."  At the time of this writing, I also still need to make a relatively small decision (among a long, long list of many other things) that I feel may have large consequences for the overall "look" and "feel" of the page: Should the text be left-justified or center-justified?</li></div>
+  <div class="filterLi colors"><li><b>March 11, 2020</b>  This is my second journal entry today: I've changed the "journal" page quite a lot in just the last few hours.  First, I fixed the problems outlined in today's first journal entry.  I decided on left-justified text for the reasons outlined in the linked article (and also because I felt like it).  I also added a "fade in" effect for the opacity of each journal entry.  Similarly, I linked my first codesketch to the website's "home page" ("index").  These are just a few of the changes I've made so far, and I will continue to <a href="https://www.jstor.org/stable/4343860" title="I love polysyndeton!  Read this article about it in Caesar's 'Commentarii de Bello Gallico' (Commentaries on the Gallic War)" style="color:black">edit and improve and add</a> (hover over the underlined text to learn why it's linked) to the site in the future.</li></div>
+  <div style="font-size:24px"><b>April 2020</b></div>
+
+  <li><a href="#">Billy</a></li>
+  <li><a href="#">Bob</a></li>
+
+  <li><a href="#">Calvin</a></li>
+  <li><a href="#">Christina</a></li>
+  <li><a href="#">Cindy</a></li>
+</ul>
+
+<script>
+
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+// Show filtered elements
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
+  }
+}
+
+// Hide elements that are not selected
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+
+}
+</script>
 
 </body>
 </html>
