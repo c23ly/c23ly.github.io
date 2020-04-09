@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style>
+	#something {
+		width: 200px;
+		height: 200px;
+		background-color: grey;
+	}
+</style>
+</head>
+<body>
+	<div id="something"></div>
+
+	<script type="text/javascript">
+
+		document.addEventListener(
+			"mousemove", function(event){
+				console.log(event.clientX, event.clientY)
+			}
+			)
+	</script>
+</body>
+
+</html>
