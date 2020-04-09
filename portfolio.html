@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Chakra+Petch|IBM+Plex+Sans:100|Playfair+Display&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&family=IBM+Plex+Mono:ital@0;1&family=IBM+Plex+Sans+Condensed:ital@0;1&family=IBM+Plex+Sans:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&family=IBM+Plex+Serif:ital@0;1&family=Playfair+Display&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body { 
+  margin: 0;
+  font-family: 'IBM Plex Sans', sans-serif;
+
+}
+
+#header {
+  background-color: #f1f1f1;
+  padding: 0px 5px;
+  color: black;
+  text-align: center;
+  font-size: 90px; 
+  font-weight: bold;
+  line-height: 0px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: 0.2s;
+
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+	<p>my portfolio</p>
+	<p style="font-size:20px"><a href="#htmlcss" style="color:black; text-decoration:none">HTML/CSS</a> | <a href="#java" style="color:black; text-decoration:none">JavaScript Event Listeners</a> | <a href="#video" style="color:black; text-decoration:none">Review Video Coding</a></p>
+</div>
+
+<div id="October" style="margin-top:200px;padding:15px 15px;font-size:30px">
+  <p style="font-size:50px"><b>HTML/CSS: </b></p>
+  <p><i>This is a project I completed using CSS and HTML.  It is a very informative trivia project based on birds.  Try it out to expand your bird knowledge!</i></p>
+  <p><a href="https://observablehq.com/@c23ly/hello-world"  style="color:black; font-weight:bold">HTML/CSS Bird Trivia</a></p> 
+  <p>Hover over the picture of the bird to learn its name, and also an interesting fact about it!.
+</div>
+
+<div id="December" style="padding:15px 15px;font-size:30px">
+<p style="font-size:50px"><b>December 2019: </b></p>
+  <p><i>This is an archive of all my work from December 2019.  Project titles are links, and projects appear below in chronological order.</i></p>
+  <p><a href="https://observablehq.com/@c23ly/arrays-workout"  style="color:black; font-weight:bold">Arrays Workout</a></p> 
+  <p>This was a practice 'exercise' I did surrounding arrays: what they are and what they do.</p>
+</div>
+
+<script>
+// When the user scrolls down 50px from the top of the document, resize the header's font size
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("header").style.fontSize = "30px";
+  } else {
+    document.getElementById("header").style.fontSize = "90px";
+  }
+}
+</script>
+
+</body>
+</html>

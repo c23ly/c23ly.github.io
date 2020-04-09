@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Chakra+Petch|IBM+Plex+Sans:100|Playfair+Display&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&family=IBM+Plex+Mono:ital@0;1&family=IBM+Plex+Sans+Condensed:ital@0;1&family=IBM+Plex+Sans:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&family=IBM+Plex+Serif:ital@0;1&family=Playfair+Display&display=swap" rel="stylesheet">
+
+
+
+	<center><p id="other">bird trivia!</p><center>
+	<br><center><p id="thing">Do you like learning trivia about birds?  I do!  Hover directly below a "learn about {bird type}" to read an interesting fact about a feathered creature!</p></center></br>
+
+
+	<style>
+		body{
+		background-color: white;
+		<!--background-image: url("https://i.stack.imgur.com/1Eb5w.jpg");-->
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-attachment: fixed;
+		font-family: 'IBM Plex Sans', sans-serif;
+		margin-left: 0;
+		margin-right: 0;
+
+		}
+
+		#b {
+			color: black;
+			font-size: 45px;
+			text-align: left;
+			text-decoration: none;
+			font-family: 'IBM Plex Sans', sans-serif;
+			background-color: white;
+			background-image: url("https://animals.sandiegozoo.org/sites/default/files/2016-10/animals_hero_california_condor.jpg");
+			opacity: 0.0;
+			height:175px;
+			width:100%;
+			right: 0;
+			left: 0;
+			position:relative;
+			transition: opacity 0.6s
+
+		}
+
+		#b:hover {
+			opacity: 1.0;
+
+		}
+
+		#other {
+			color: black;
+			font-size: 100px;
+			margin-bottom: 0px;
+
+			}
+
+		#thing {
+			color: black;
+			font-size: 20px;
+
+			}
+
+		#pigeon {
+			color: black;
+			font-size: 20px;
+
+		}
+
+
+		#condor {
+			color: black;
+			font-size: 20px;
+
+		}
+
+
+		#ostrich {
+			color: black;
+			font-size: 20px;
+
+		}
+
+		#owl {
+			color: black;
+			font-size: 20px;
+
+		}
+
+
+		#a {
+			color: black;
+			font-size: 45px;
+			text-align: left;
+			text-decoration: none;
+			font-family: 'IBM Plex Sans', sans-serif;
+			background-color: white;
+			background-image: url("https://download.ams.birds.cornell.edu/api/v1/asset/66031271/1800");
+			background-repeat: repeat;
+			opacity: 0.0;
+			height:170px;
+			width:100%;
+			right: 0;
+			left: 0;
+			position: relative;
+			transition: opacity 0.6s;
+
+		}
+
+		#a:hover {
+			opacity: 1.0;
+
+		}
+
+		#c {
+
+			color: black;
+			font-size: 45px;
+			text-align: left;
+			text-decoration: none;
+			background-image: url("https://upload.wikimedia.org/wikipedia/commons/9/9d/Struthio_camelus_-_Etosha_2014_%283%29.jpg");
+			font-family: 'IBM Plex Sans', sans-serif;
+			background-color: white;
+			opacity: 0.0;
+			height:130px;
+			width:100%;
+			right: 0;
+			left: 0;
+			position: relative;
+			transition: opacity 0.6s
+
+		}
+
+		#c:hover {
+			opacity: 1.0;
+
+		}
+
+		#d {
+
+			color: black;
+			font-size: 45px;
+			text-align: left;
+			text-decoration: none;
+			font-family: 'IBM Plex Sans', sans-serif;
+			background-color: white;
+			background-image: url("https://www.shaverscreek.org/wp-content/uploads/2019/02/image3-e1550610760558.jpg");
+			opacity: 0.0;
+			height:230px;
+			width:100%;
+			right: 0;
+			left: 0;
+			position: relative;
+			transition: opacity 0.6s
+
+		}
+
+		#d:hover {
+			opacity: 1.0;
+
+		}
+
+		#e {
+
+			color: black;
+			font-size: 20px;
+			text-align: left;
+			text-decoration: none;
+			font-family: 'IBM Plex Sans', sans-serif;
+			background-color: white;
+			opacity: 0.25;
+			height:110px;
+			width:100%;
+			right: 0;
+			left: 0;
+			position: relative;
+			transition: opacity 0.6s
+
+		}
+
+		#e:hover {
+			opacity: 0.75;
+
+		}
+
+		#f {
+
+			color: black;
+			font-size: 20px;
+			text-align: left;
+			text-decoration: none;
+			font-family: 'IBM Plex Sans', sans-serif;
+			background-color: white;
+			opacity: 0.25;
+			height:110px;
+			width:100%;
+			right: 0;
+			left: 0;
+			position: relative;
+			transition: opacity 0.6s
+
+		}
+
+		#f:hover {
+			opacity: 0.75;
+
+		}
+
+		}
+	</style>
+</head>
+<body>
+
+		<div id="pigeon"><b>Learn about pigeons:</b></div>
+
+		<br><div id="a"><center>	
+
+		Pigeons can recognize human faces!  Other birds can do this, as well.  Crows, for instance, can remember a face for up to five-ten years!
+
+		</center></div></br>
+
+		<div id="condor"><b>Learn about condors:</b></div>
+
+		<br><div id="b" style="color: white"><center>
+
+		California condors have wingspans so large, sometimes they are mistaken for small aircraft – "it's a bird... it's a plane... oh, wait, it is a bird!"</center>
+		
+		</div></br>
+
+		<b><div id="ostrich">Learn about ostriches:</div></b>
+
+		<br><div id="c"><center>
+
+		Ostriches have the largest eyes of any land animal!  Another fact: they also lay the largest eggs of any bird on Earth!</center>
+
+		</div></br>
+
+		<div id="owl"><b>Learn more about owls:</b></div>
+
+		<br><div id="d"><center>
+
+		Not all owls hoot!  For instance, Barn Owls make 'hissing' sounds, another type whinnies like a horse, and yet another sounds like (to those who've heard it) someone  sharpening a saw!</center>
+
+		</div></br>
+</body>
+</html>	
