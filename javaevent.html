@@ -1,26 +1,192 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title></title>
-<style>
-	#something {
-		width: 200px;
-		height: 200px;
-		background-color: grey;
-	}
-</style>
+    <style>
+        #question1{
+			width:100%;
+			height: 25px;
+			background-color: grey;
+			border: 1px solid black;
+		}
+
+		#answer1{
+			width:100%;
+			height:25px;
+			background-color: grey;
+			border: 1px solid black;
+;
+		}
+
+		 #question2{
+			width:100%;
+			height: 25px;
+			background-color: grey;
+			border: 1px solid black;
+		}
+
+		#answer2{
+			width:100%;
+			height:25px;
+			background-color: grey;
+			border: 1px solid black;
+
+		}
+
+		#question3 {
+			width:100%;
+			height: 25px;
+			background-color: grey;
+			border: 1px solid black;
+		}
+
+		#answer3{
+			width:100%;
+			height:25px;
+			background-color: grey;
+			border: 1px solid black;
+
+		}
+
+		#question4 {
+			width:100%;
+			height: 25px;
+			background-color: grey;
+			border: 1px solid black;
+		}
+
+		#answer4{
+			width:100%;
+			height:25px;
+			background-color: grey;
+			border: 1px solid black;
+
+		}
+
+
+	</style>
 </head>
+
 <body>
-	<div id="something"></div>
+	<div id="title" style="color: black; font-size: 50px"><center><b>Trivia</b></center></div>
+	<p>I love trivia!  In fact, as I code this project, I am sitting next to an open trivia book, from which I will be pulling different trivia questions.  A good trivia book is "Game Query" by The Economist (the magazine) – which is full of some very difficult, but answerable questions.  Ask anyone I know, at some point, we're sure to have had a conversation that devolved into a Wikipedia fact-checking challenge!  <i>Instructions:</i>  Click on each 'question' box to reveal the answer below it – click again to re-hide it.  All facts come from the book "1,227 Quite Interesting Facts to Blow Your Socks Off," which is quite an interesting title!</p>
+    <center><div id="question1" style="font-size: 20px"><b>Question 1:</b>  Which country has the largest supply of gold in the world.  Which has the second-largest?</div></center>
+    <center><div id="answer1" style="font-size: 20px"><b>Answer to Question 1:</b>  Switzerland has the world's largest gold supply, and Lebanon has the second-largest.</div></center>
+    <center><div id="question2" style="font-size: 20px"><b>Question 2:</b>  What is the English transliteration of the Irish name for jellyfish?</div></center>
+    <center><div id="answer2" style="font-size: 20px"><b>Answer to Question 2:</b>  It turns out it's 'seal snot' – an accurate name for a creature that looks like...well...seal snot exactly!</div></center>
+    <center><div id="question3" style="font-size: 20px"><b>Question 3:</b>  How much does the Internet weigh?</div></center>
+    <center><div id="answer3" style="font-size: 20px"><b>Answer to Question 3:</b>  As much as 'one large strawberry.'  I'm not sure how they measured this or why they chose the strange reference for measurement!</div></center>
+    <center><div id="question4" style="font-size: 20px"><b>Question 4:</b>  What bird can be trained to herd sheep?</div></center>
+    <center><div id="answer4" style="font-size: 20px"><b>Answer to Question 4:</b>  Ostriches!  Wouldn't it be amusing if it were hummingbirds, though?</div></center>
+    <script type="text/javascript">
 
-	<script type="text/javascript">
+    var question1 = document.getElementById("question1");
 
-		document.addEventListener(
-			"mousemove", function(event){
-				console.log(event.clientX, event.clientY)
-			}
-			)
-	</script>
+    var answer1 = document.getElementById("answer1");
+
+    answer1.style.opacity = "0"
+
+        var counter = 0;
+
+    question1.addEventListener("click", function() {
+    	counter = counter +1;
+    	    	console.log(counter)
+
+
+    	if (counter%2 == 0 ){
+    		answer1.style.opacity = "1";
+
+    	}
+        
+        else if (counter%2 == 1 )
+
+        {
+        answer1.style.opacity = "0";	
+        }
+
+    })
+    </script>
+    <script>
+
+    var question2 = document.getElementById("question2");
+
+    var answer2 = document.getElementById("answer2");
+
+    answer2.style.opacity = "0"
+
+   		var counter = 1;
+
+    question2.addEventListener("click", function() {
+    	counter = counter +2;
+    	    	console.log(counter)
+
+
+    	if (counter%2 == 0 ){
+    		answer2.style.opacity = "1";
+
+    	}
+        
+        else if (counter%2 == 1 ) {
+        	answer2.style.opacity = "0";	
+        }
+
+
+    })
+    </script>
+    <script>
+
+    var question3 = document.getElementById("question3");
+
+    var answer3 = document.getElementById("answer3");
+
+    answer3.style.opacity = "0"
+
+   		var counter = 1;
+
+    question3.addEventListener("click", function() {
+    	counter = counter +2;
+    	    	console.log(counter)
+
+
+    	if (counter%2 == 0 ){
+    		answer3.style.opacity = "1";
+
+    	}
+        
+        else if (counter%2 == 1 ) {
+        	answer3.style.opacity = "0";	
+        }
+
+
+    })
+    </script>
+        <script>
+
+    var question4 = document.getElementById("question4");
+
+    var answer4 = document.getElementById("answer4");
+
+    answer4.style.opacity = "0"
+
+   		var counter = 1;
+
+    question4.addEventListener("click", function() {
+    	counter = counter +2;
+    	    	console.log(counter)
+
+
+    	if (counter%2 == 0 ){
+    		answer4.style.opacity = "1";
+
+    	}
+        
+        else if (counter%2 == 1 ) {
+        	answer4.style.opacity = "0";	
+        }
+
+
+    })
+    </script>
 </body>
 
 </html>
