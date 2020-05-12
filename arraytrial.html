@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	body {
+
+		background-image: url("https://media.istockphoto.com/photos/white-blank-book-cover-isolated-on-grey-picture-id483005600?k=6&m=483005600&s=170667a&w=0&h=LnK5cbVm-WY8OYD_4aL3_5uMJELRAFW_SKqO4AVkQmM=");
+		background-repeat: no-repeat;
+		background-width: 500px;
+		background-height: 500px;
+	}
+	#westover {
+	width: 420px;
+	height: 500px;
+	background-repeat: no-repeat;
+	background-color: none;
+	text-align: center;
+	font-size: 20px;
+	padding-left: -10px;
+	padding-top: 65px;
+	position: absolute;
+
+}
+
+	#vanslyck {
+	width: 420px;
+	height: 500px;
+	background-repeat: no-repeat;
+	background-color: none;
+	text-align: center;
+	font-size: 20px;
+	padding-left: -10px;
+	padding-top: 65px;
+	position: absolute;
+}
+</style>
+</head>
+<body>
+	<div id="westover"><br><i>Educated</i><br><p style = "color:white">........</p></br></br>by Tara Westover</div>
+	<div id="vanslyck"><br><i>Free to All</i><br><p style = "color:white">........</p></br></br>by Abigail Van Slyck</div>
+</body>
+<script>
+
+var westover = document.getElementById("westover")
+var vanslyck = document.getElementById("vanslyck")
+
+var myArray = [
+  "westover",
+  "vanslyck"
+];
+
+var randomItem = myArray[Math.floor(Math.random()*myArray.length)];
+
+document.body.div = randomItem;
+
+
+</script>
+</html>	
